@@ -24,4 +24,11 @@
      document.getElementById("mainscreen").src = "https://google.com";
     }
     </script>
+   <system.webServer>
+     <httpProtocol allowKeepAlive="true" >
+       <customHeaders>
+         <add name="X-Frame-Options" value="*" />
+       </customHeaders>
+     </httpProtocol>
+ </system.webServer>
   </html>
